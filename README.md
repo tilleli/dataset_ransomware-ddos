@@ -15,6 +15,10 @@ Le dataset final est créé en concaténant les deux sources avec :
 
 ## Méthode de construction
 
+### 0. Sélection des features
+- Chaque dataset a d'abord été **prétraité séparément**.  
+- Une **feature selection spécifique** a été appliquée sur chaque dataset (Ransomware et DDoS) avant l’unification.  
+
 ### 1. Gestion des features
 - **Features communes** : conservées telles quelles  
 - **Features spécifiques** : ajout dans un squelette unifié  
@@ -24,7 +28,8 @@ Le dataset final est créé en concaténant les deux sources avec :
 - Features Ransomware manquantes → remplies avec trafic bénin Ransomware  
 
 ### 3. Tri chronologique
-- Tous les datasets sont concaténés et triés par timestamp  
+- Tous les datasets sont concaténés et triés par timestamp
+
 
 ---
 
